@@ -1,0 +1,27 @@
+/******************
+
+    SETUP
+
+******************/
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+// Partials
+@import 'partials/vars';
+@import 'partials/common';
+@import 'partials/header';
+
+// MAIN styles
+
+.main-ctn {
+    height: 100%;
+    padding-top: 68px;
+
+    &__albums-ctn {
+        padding: 100px 0;
+        @include ctn_max-width($container-width);
+        @include flex;
+        flex-wrap: wrap;
+        @import 'partials/card';
+    }
+}

@@ -1,0 +1,36 @@
+.card {
+    background: $bg-dark;
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+    margin: 10px;
+
+    &__img-ctn {
+        width: 100%;
+        
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info-ctn {
+        @include flex(column, center, center);
+
+        h2{
+            font-size: 18px;
+            font-weight: $font-regular;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: $font-semibold;
+            margin: 10px 0;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: $font-semibold;
+        }
+    }
+}

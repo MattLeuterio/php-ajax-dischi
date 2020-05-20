@@ -1,0 +1,48 @@
+/**********************
+
+COMMONS STYLE
+
+**********************/
+
+
+// MIXINS
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin reset-a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@mixin ctn_max-width($width: 100%) {
+    width: $width;
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin flex($f_direction: row, $f_justify: flex-start, $f_align: flex-start) {
+    display: flex;
+    flex-direction: $f_direction;
+    justify-content: $f_justify;
+    align-items: $f_align;
+}
+
+// GENERAL RULES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include ctn_max-width();
+    margin: 0 auto;
+    background-color: $bg-light;
+    color: $primary-color;
+    font-family: $font-family;
+}

@@ -1,0 +1,19 @@
+.site-header {
+    position: fixed;
+    width: 100%;
+    height: 68px;
+    background-color: $bg-dark;
+
+    &__nav {
+        height: 100%;
+        @include ctn_max-width($container-width);
+        @include flex($f_align: center);
+
+        &__logo {
+
+            img {
+                width: 45px;
+            }
+        }
+    }
+}
