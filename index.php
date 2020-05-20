@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <h1>vaffanculo npm </h1>
+    
 
     <!-- script -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
