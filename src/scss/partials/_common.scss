@@ -31,6 +31,16 @@ COMMONS STYLE
     align-items: $f_align;
 }
 
+// UTILITY
+
+.u_pRelative {
+    position: relative;
+}
+
+.u_pAbsolute {
+    position: absolute;
+}
+
 // GENERAL RULES
 
 * {

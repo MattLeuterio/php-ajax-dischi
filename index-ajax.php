@@ -10,6 +10,10 @@
     <title>Document</title>
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- FontAwesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon-spotify.32x32.png" sizes="32x32 48x48">
 </head>
 <body>
     
@@ -20,11 +24,6 @@
     <main class="main-ctn">
         <section class="main-ctn__albums-ctn">
             
-                    
-            
-
-           
-
         </section>
     </main>
 
@@ -34,7 +33,7 @@
     <script id="card-template" type="text/x-handlebars-template">
         <div class="card">
             <div class="card__img-ctn">
-                <img src="{{ img_path }}" alt=" {{ title }} cover ?>">
+                <img src="{{ img_path }}" alt=" {{ title }} cover">
             </div>
             <div class="card__info-ctn">
                 <h2>{{ title }}</h2>

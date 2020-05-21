@@ -1,5 +1,6 @@
 .site-header {
     position: fixed;
+    z-index: 1;
     width: 100%;
     height: 68px;
     background-color: $bg-dark;
@@ -7,12 +8,45 @@
     &__nav {
         height: 100%;
         @include ctn_max-width($container-width);
-        @include flex($f_align: center);
+        @include flex(row, space-between, center);
 
         &__logo {
 
             img {
+                cursor: pointer;
                 width: 45px;
+            }
+        }
+
+        &__input {
+
+            #author-search {
+                width: 270px;
+                height: 30px;
+                padding: 10px;
+                padding-left: 35px;
+                margin-right: 20px;
+                border-radius: 3px;
+                border: 1px solid #b6b6b6;
+                background: transparent;
+                color: #fff;
+
+                &:focus {
+                    outline: none;
+                    border: 1px solid $secondary-color;
+                }
+            }
+
+            i {
+                cursor: pointer;
+                color: #fff;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:hover {
+                    color: $secondary-color;
+                }
             }
         }
     }
